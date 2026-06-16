@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import API from "../api/axiosConfig";
-
+import Navbar from "../components/Navbar";
 import toast from "react-hot-toast";
 import Navbar from "../components/Navbar";
 import "../Styles/Uploadnotes.css"; 
