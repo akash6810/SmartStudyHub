@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import API from "../api/axiosConfig";
 
 import toast from "react-hot-toast";
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../Components/Navbar.jsx";
 import "../Styles/MyNotes.css"; 
 
 const MyNotes = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import API from "../api/axiosConfig";
 import toast from "react-hot-toast";
-import Navbar from "../components/Navbar";
+import Navbar from "../Components/Navbar.jsx";
 import "../Styles/Uploadnotes.css"; 
 
 const UploadNotes = () => {
