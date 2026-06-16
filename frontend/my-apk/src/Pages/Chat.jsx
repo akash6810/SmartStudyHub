@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import io from "socket.io-client";
-import Navbar from "../Components/Navbar,jsx";
+import Navbar from "../Components/Navbar.jsx";
 import toast from "react-hot-toast";
 import "../Styles/Chat.css";
 
