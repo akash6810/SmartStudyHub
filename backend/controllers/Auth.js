@@ -18,7 +18,7 @@ const register = async (req, res) => {
             return res.status(400).json({ success: false, message: "User Already Exists Please Login" })
 
         }
-        const hashedPassowrd = await bcryptjs.hashSync(password, 10)
+        const hashedPassowrd = await bcryptjs.hash(password, 10)
         const verficationToken = Math.floor(100000 + Math.random() * 900000).toString()
         const tempUser = new TempUser({
             email,

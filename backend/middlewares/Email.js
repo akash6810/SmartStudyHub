@@ -15,6 +15,7 @@ const {Verification_Email_Template,Welcome_Email_Template} = require('../middlew
         console.log('Email send Successfully',response)
     } catch (error) {
         console.log('Email error',error)
+        throw error
     }
 
 }
