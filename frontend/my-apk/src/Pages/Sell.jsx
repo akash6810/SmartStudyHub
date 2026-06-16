@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import API from "../api/axiosConfig";
 import toast from "react-hot-toast";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 import "../Styles/Sell.css";
 
 const Sell = () => {

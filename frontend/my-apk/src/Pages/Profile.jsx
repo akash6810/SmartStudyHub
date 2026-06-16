@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+import Navbar from "../Components/Navbar.jsx";
 const Profile = () => {
     const user = JSON.parse(localStorage.getItem("user"));
 
