@@ -24,8 +24,8 @@ const Chat = () => {
   // ✨ FIX 2: Manage socket lifecycle cleanly inside a unified useEffect
   useEffect(() => {
     // Initialize connection ONLY once
-    socketRef.current = io("${process.env.BACKEND_BASE_URL}");
-    //if u r running in browser then write this "http://localhost:4000" 
+   socketRef.current = io(import.meta.env.VITE_BACKEND_BASE_URL);//this url is for safety purpose
+    //if u r running in browser then write this `http://localhost:4000` in place of `import.meta.env.VITE_BACKEND_BASE_URL`
 
     // Listeners securely attached to the active socket instance
     socketRef.current.on("chatHistory", (history) => {
