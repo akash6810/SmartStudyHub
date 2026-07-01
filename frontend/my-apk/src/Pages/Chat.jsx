@@ -25,6 +25,7 @@ const Chat = () => {
   useEffect(() => {
     // Initialize connection ONLY once
     socketRef.current = io("${process.env.BACKEND_BASE_URL}");
+    //if u r running in browser then write this "http://localhost:4000" 
 
     // Listeners securely attached to the active socket instance
     socketRef.current.on("chatHistory", (history) => {
